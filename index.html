@@ -35,6 +35,7 @@
 </head>
 <body class="bg-brand-50 text-gray-800 antialiased selection:bg-brand-accent selection:text-brand-900">
 
+    <!-- Navbar -->
     <header class="sticky top-0 z-40 bg-brand-800/95 backdrop-blur-md text-white shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-3">
@@ -61,15 +62,18 @@
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section id="beranda" class="relative overflow-hidden bg-gradient-to-br from-brand-900 via-brand-800 to-brand-600 text-white py-20 lg:py-28">
         <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffd54f_1px,transparent_1px)] [background-size:16px_16px]"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center space-x-2 bg-brand-700/80 border border-brand-500/30 px-4 py-1.5 rounded-full text-brand-accent text-xs font-semibold uppercase tracking-wider shadow-inner">
-                        <i class="fa-solid fa-star"></i>
-                        <span>Kode Hari Ini, Website Esok!</span>
+                    <!-- Promo Badge Animasi -->
+                    <div class="inline-flex items-center space-x-2 bg-brand-accent text-brand-900 font-bold px-4 py-2 rounded-2xl shadow-lg animate-bounce text-xs sm:text-sm uppercase tracking-wider">
+                        <i class="fa-solid fa-tags"></i>
+                        <span>Promo Spesial: Rp 14.500 <span class="line-through text-brand-600 font-normal ml-1">Rp 26.000</span> / Bab / File Buku!</span>
                     </div>
+
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
                         Dari Tidak Tahu Coding, <span class="text-brand-accent underline decoration-brand-accent/50 underline-offset-8">Menjadi Bisa Membuat Website!</span>
                     </h1>
@@ -81,32 +85,30 @@
                             <i class="fa-solid fa-book-open"></i>
                             <span>Buka Akses Bab Belajar</span>
                         </a>
-                        <a href="https://wa.me/6285520767908?text=Halo%20Kak%20Nahya,%20saya%20ingin%20konsultasi%20dan%20meminta%20sandi%20buku%20GO%20WEB" target="_blank" class="border-2 border-white/30 hover:border-white text-white font-semibold px-6 py-4 rounded-2xl transition text-center flex items-center justify-center space-x-3 bg-white/5 backdrop-blur-sm">
+                        <a href="https://wa.me/6285520767908?text=Halo%20Kak%20Nahya,%20saya%20ingin%20pesan%20buku%20GO%20WEB%20harga%20promo%2014500" target="_blank" class="border-2 border-white/30 hover:border-white text-white font-semibold px-6 py-4 rounded-2xl transition text-center flex items-center justify-center space-x-3 bg-white/5 backdrop-blur-sm">
                             <i class="fa-brands fa-whatsapp text-green-400 text-xl"></i>
-                            <span>WhatsApp Penulis</span>
+                            <span>Pesan via WhatsApp</span>
                         </a>
                     </div>
                 </div>
-                <div class="lg:col-span-5 flex justify-center">
-                    <div class="relative w-full max-w-md bg-white/10 backdrop-blur-xl p-6 rounded-3xl border border-white/20 shadow-2xl">
-                        <div class="bg-brand-900 rounded-2xl p-4 text-left font-mono text-xs text-brand-100 shadow-inner overflow-hidden border border-brand-700">
-                            <div class="flex items-center space-x-2 mb-3 pb-2 border-b border-brand-700">
-                                <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                                <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                                <span class="text-xs text-gray-400 font-mono ml-2">index.html</span>
+
+                <!-- Bagian Sampul Buku dari GitHub -->
+                <div class="lg:col-span-5 flex flex-col items-center justify-center space-y-4">
+                    <div class="relative w-full max-w-sm bg-white/10 backdrop-blur-xl p-4 rounded-3xl border border-white/20 shadow-2xl">
+                        <div class="grid grid-cols-2 gap-3">
+                            <!-- Ganti URL src dengan tautan raw GitHub sampul depan Anda -->
+                            <div class="space-y-1 text-center">
+                                <img src="URL_RAW_GITHUB_SAMPUL_DEPAN_ANDA" alt="Sampul Depan Buku GO WEB" class="w-full h-48 object-cover rounded-xl shadow-md border border-white/20 bg-brand-900" onerror="this.src='https://placehold.co/200x300/1b5e20/ffd54f?text=Sampul+Depan'">
+                                <span class="text-[10px] text-brand-100 font-medium">Sampul Depan</span>
                             </div>
-                            <p class="text-green-400">&lt;!DOCTYPE html&gt;</p>
-                            <p class="text-blue-300">&lt;html&gt;</p>
-                            <p class="pl-4 text-purple-300">&lt;head&gt;<br>&nbsp;&nbsp;&lt;title&gt;Go Web!&lt;/title&gt;<br>&lt;/head&gt;</p>
-                            <p class="pl-4 text-yellow-200">&lt;body&gt;</p>
-                            <p class="pl-8 text-white">&lt;h1&gt;Semangat Belajar!&lt;/h1&gt;</p>
-                            <p class="pl-8 text-gray-300">&lt;p&gt;Website pertamaku dari nol.&lt;/p&gt;</p>
-                            <p class="pl-4 text-yellow-200">&lt;/body&gt;</p>
-                            <p class="text-blue-300">&lt;/html&gt;</p>
+                            <!-- Ganti URL src dengan tautan raw GitHub sampul belakang Anda -->
+                            <div class="space-y-1 text-center">
+                                <img src="URL_RAW_GITHUB_SAMPUL_BELAKANG_ANDA" alt="Sampul Belakang Buku GO WEB" class="w-full h-48 object-cover rounded-xl shadow-md border border-white/20 bg-brand-900" onerror="this.src='https://placehold.co/200x300/0d3811/ffd54f?text=Sampul+Belakang'">
+                                <span class="text-[10px] text-brand-100 font-medium">Sampul Belakang</span>
+                            </div>
                         </div>
-                        <div class="mt-4 flex items-center justify-between text-xs text-brand-100">
-                            <span><i class="fa-solid fa-shield-halved text-brand-accent"></i> 12 Bab Dilindungi Sandi</span>
+                        <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs text-brand-100">
+                            <span><i class="fa-solid fa-tag text-brand-accent"></i> Promo Rp 14.500 / Bab</span>
                             <span class="text-brand-accent font-bold">100% Pemula Friendly</span>
                         </div>
                     </div>
@@ -115,6 +117,7 @@
         </div>
     </section>
 
+    <!-- Tentang Buku -->
     <section id="tentang" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16">
             <h2 class="text-3xl font-bold text-brand-900">Apa yang Akan Kamu Pelajari?</h2>
@@ -145,18 +148,19 @@
         </div>
     </section>
 
+    <!-- Daftar Bab & Promo -->
     <section id="bab-materi" class="bg-brand-100/60 py-20 border-y border-brand-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-14">
-                <span class="text-brand-600 font-bold uppercase tracking-widest text-xs">Portal Unduhan Buku</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-900 mt-2">Daftar 12 Bab Materi & Pesan Buku nya Sekarang! Dapatkan Sandi Aksesnya</h2>
+                <span class="text-brand-600 font-bold uppercase tracking-widest text-xs">Portal Unduhan Buku & Promo</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-900 mt-2">Daftar 12 Bab Materi (Promo Rp 14.500 / Bab)</h2>
                 <p class="text-gray-600 mt-3 text-sm sm:text-base">
-                    Pesan lalu bayar Bukunya Dan Masukkan sandi khusus untuk setiap bab agar materi PDF dapat diunduh dan dipelajari. Belum punya sandi? Hubungi penulis via WhatsApp di bawah.
+                    Dapatkan harga spesial <strong class="text-brand-800">Rp 14.500</strong> dari harga normal <span class="line-through">Rp 26.000</span> per file/bab buku. Pesan dan masukkan sandi khusus untuk mengunduh materi PDF!
                 </p>
-                <div class="mt-6">
-                    <a href="https://wa.me/6285520767908?text=Halo%20Kak%20Nahya,%20saya%20ingin%20minta%20semua%20sandi%20buku%20GO%20WEB" target="_blank" class="inline-flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white font-semibold px-5 py-2.5 rounded-xl shadow text-sm transition">
+                <div class="mt-6 flex flex-wrap justify-center gap-4">
+                    <a href="https://wa.me/6285520767908?text=Halo%20Kak%20Nahya,%20saya%20ingin%20beli%20semua%20bab%20buku%20GO%20WEB%20harga%20promo%2014500" target="_blank" class="inline-flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white font-semibold px-5 py-2.5 rounded-xl shadow text-sm transition">
                         <i class="fa-brands fa-whatsapp text-lg"></i>
-                        <span>Minta Sandi Bab via WhatsApp (085520767908)</span>
+                        <span>Beli & Minta Sandi via WhatsApp (085520767908)</span>
                     </a>
                 </div>
             </div>
@@ -168,6 +172,7 @@
         </div>
     </section>
 
+    <!-- Modal Password -->
     <div id="password-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm hidden p-4">
         <div class="bg-white w-full max-w-md rounded-3xl p-6 sm:p-8 shadow-2xl border border-gray-100 transform transition-all">
             <div class="flex justify-between items-center mb-4">
@@ -177,7 +182,7 @@
                     </div>
                     <div>
                         <h3 id="modal-chapter-title" class="text-lg font-bold text-brand-900">Masukkan Sandi Bab</h3>
-                        <p class="text-xs text-gray-500">Autentikasi sandi statis untuk membuka materi</p>
+                        <p class="text-xs text-gray-500">Harga Promo: Rp 14.500 per file/bab</p>
                     </div>
                 </div>
                 <button onclick="closePasswordModal()" class="text-gray-400 hover:text-gray-600 p-2 rounded-lg">
@@ -188,10 +193,10 @@
                 <input type="hidden" id="modal-chapter-id">
                 <div>
                     <label class="block text-xs font-semibold uppercase text-gray-600 mb-1">Sandi Statis Bab</label>
-                    <input type="password" id="password-input" required placeholder="Contoh: GOWEBFILE" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-500 focus:outline-none text-sm font-mono tracking-wider">
+                    <input type="password" id="password-input" required placeholder="Contoh: GOWEB1" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-500 focus:outline-none text-sm font-mono tracking-wider">
                 </div>
                 <div id="password-error" class="text-red-500 text-xs hidden font-medium bg-red-50 p-2.5 rounded-lg border border-red-100">
-                    <i class="fa-solid fa-circle-exclamation mr-1"></i> Sandi salah! Hubungi penulis di 085520767908 jika lupa.
+                    <i class="fa-solid fa-circle-exclamation mr-1"></i> Sandi salah! Hubungi penulis di 085520767908.
                 </div>
                 <div class="flex space-x-3 pt-2">
                     <button type="button" onclick="closePasswordModal()" class="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium py-3 rounded-xl text-sm transition">Batal</button>
@@ -199,22 +204,22 @@
                 </div>
             </form>
             <div class="mt-5 text-center border-t border-gray-100 pt-4">
-                <p class="text-xs text-gray-500">Belum punya sandi bab ini?</p>
+                <p class="text-xs text-gray-500">Belum punya sandi atau ingin bayar promo Rp 14.500?</p>
                 <a id="whatsapp-request-link" href="#" target="_blank" class="inline-flex items-center space-x-1.5 text-xs text-green-600 font-semibold hover:underline mt-1">
                     <i class="fa-brands fa-whatsapp text-sm"></i>
-                    <span>Minta Sandi ke WhatsApp Penulis (085520767908)</span>
+                    <span>Hubungi WhatsApp Penulis (085520767908)</span>
                 </a>
             </div>
         </div>
     </div>
 
+    <!-- Tentang Penulis dengan Foto dari GitHub -->
     <section id="penulis" class="py-20 bg-white">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-gradient-to-r from-brand-800 to-brand-600 rounded-3xl p-8 sm:p-12 text-white shadow-xl flex flex-col md:flex-row items-center gap-8">
                 <div class="w-36 h-36 sm:w-44 sm:h-44 rounded-full bg-brand-accent p-1.5 shadow-lg flex-shrink-0">
-                    <div class="w-full h-full rounded-full bg-brand-900 flex items-center justify-center text-brand-accent text-5xl font-extrabold overflow-hidden relative">
-                        <img src="https://placehold.co/200x200/1b5e20/ffd54f?text=MNA" alt="M. Nahya Fadlallah A.H." class="w-full h-full object-cover">
-                    </div>
+                    <!-- Ganti URL src dengan tautan raw GitHub foto penulis Anda -->
+                    <img src="URL_RAW_GITHUB_FOTO_PENULIS_ANDA" alt="M. Nahya Fadlallah A.H." class="w-full h-full object-cover rounded-full bg-brand-900" onerror="this.src='https://placehold.co/200x200/1b5e20/ffd54f?text=MNA'">
                 </div>
                 <div class="space-y-4 text-center md:text-left">
                     <div class="inline-block bg-brand-700/80 text-brand-accent text-xs font-semibold px-3 py-1 rounded-full">
@@ -222,7 +227,7 @@
                     </div>
                     <h3 class="text-2xl sm:text-3xl font-extrabold">M. Nahya Fadlallah A.H.</h3>
                     <p class="text-brand-100 text-sm sm:text-base font-light leading-relaxed">
-                        Seorang pembelajar, pengajar, dan pecinta teknologi yang memiliki semangat besar dalam berbagi ilmu. Buku ini disusun sebagai panduan belajar web development dari dasar dengan harapan dapat membantu banyak orang, khususnya para pemula, untuk berani mencoba, terus berlatih, dan mengembangkan kreativitas di dunia digital.
+                        Seorang pembelajar, pengajar, dan pecinta teknologi yang memiliki semangat besar dalam berbagi ilmu. Buku ini disusun sebagai panduan belajar web development dari dasar dengan harga promo terjangkau (Rp 14.500 per bab), agar siapa saja dapat mencoba dan mengembangkan kreativitas di dunia digital.
                     </p>
                     <div class="pt-2 italic text-brand-accent font-medium text-sm">
                         "Karena setiap orang punya kesempatan untuk jadi hebat, termasuk kamu!"
@@ -232,6 +237,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="bg-brand-900 text-brand-100 py-12 border-t border-brand-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
             <div>
@@ -239,7 +245,7 @@
                     <i class="fa-solid fa-rocket text-brand-accent"></i>
                     <span>GO WEB! Belajar Membuat Website dari Nol</span>
                 </div>
-                <p class="text-xs text-brand-100/70 mt-1">Karya M. Nahya Fadlallah A.H. • Hak Cipta Dilindungi Undang-Undang.</p>
+                <p class="text-xs text-brand-100/70 mt-1">Karya M. Nahya Fadlallah A.H. • Harga Promo Rp 14.500 / Bab.</p>
             </div>
             <div class="flex items-center space-x-4">
                 <a href="https://wa.me/6285520767908" target="_blank" class="w-10 h-10 rounded-full bg-brand-800 hover:bg-brand-700 text-white flex items-center justify-center transition shadow">
@@ -252,6 +258,7 @@
         </div>
     </footer>
 
+    <!-- Toast Notification -->
     <div id="toast" class="fixed bottom-5 right-5 z-50 bg-gray-900 text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center space-x-3 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
         <div id="toast-icon" class="text-brand-accent text-lg">
             <i class="fa-solid fa-circle-check"></i>
@@ -259,8 +266,8 @@
         <div id="toast-message" class="text-sm font-medium">Berhasil membuka bab!</div>
     </div>
 
+    <!-- JavaScript Data & Logic -->
     <script>
-        // Data 12 Bab Buku Lengkap dengan Sandi Statis
         const chaptersData = [
             { id: 1, title: "Mengenal Dunia Web", sub: "Apa itu website, browser, server, domain, hosting, front-end, back-end, HTML/CSS/JS, tools, & project pertama.", password: "GOWEB1", pdfTitle: "Materi_Bab_1_Mengenal_Dunia_Web.pdf" },
             { id: 2, title: "Mengenal HTML", sub: "Struktur HTML, tag, elemen, heading, paragraf, link, gambar, list, table, button, dan form.", password: "GOWEB2", pdfTitle: "Materi_Bab_2_Mengenal_HTML.pdf" },
@@ -276,7 +283,6 @@
             { id: 12, title: "PROJECT AKHIR", sub: "Murid membuat website lengkap dari awal sampai selesai secara mandiri.", password: "GOWEB12", pdfTitle: "Materi_Bab_12_Project_Akhir.pdf" }
         ];
 
-        // Load unlocked chapters from localStorage
         function getUnlockedChapters() {
             const saved = localStorage.getItem('goweb_unlocked');
             return saved ? JSON.parse(saved) : [];
@@ -290,7 +296,6 @@
             }
         }
 
-        // Render Chapters Grid
         function renderChapters() {
             const grid = document.getElementById('chapters-grid');
             const unlocked = getUnlockedChapters();
@@ -309,7 +314,7 @@
                             </span>
                             <span class="text-sm font-semibold flex items-center space-x-1.5 ${isUnlocked ? 'text-green-600' : 'text-amber-600'}">
                                 <i class="fa-solid ${isUnlocked ? 'fa-lock-open' : 'fa-lock'}"></i>
-                                <span class="text-xs">${isUnlocked ? 'Terbuka' : 'Terkunci'}</span>
+                                <span class="text-xs">${isUnlocked ? 'Terbuka' : 'Rp 14.500'}</span>
                             </span>
                         </div>
                         <h3 class="text-lg font-bold text-brand-900 mb-2">${chap.title}</h3>
@@ -329,7 +334,7 @@
                         ` : `
                             <button onclick="openPasswordModal(${chap.id})" class="w-full bg-brand-900 hover:bg-brand-800 text-white font-semibold py-2.5 rounded-xl text-xs flex items-center justify-center space-x-2 transition shadow">
                                 <i class="fa-solid fa-key text-brand-accent"></i>
-                                <span>Masukkan Sandi Bab</span>
+                                <span>Masukkan Sandi Bab (Beli Rp 14.500)</span>
                             </button>
                         `}
                     </div>
@@ -338,7 +343,6 @@
             });
         }
 
-        // Modal Controls
         function openPasswordModal(chapId) {
             const chap = chaptersData.find(c => c.id === chapId);
             if (!chap) return;
@@ -348,8 +352,7 @@
             document.getElementById('password-input').value = '';
             document.getElementById('password-error').classList.add('hidden');
             
-            // Set WhatsApp request link with custom message
-            const waText = encodeURIComponent(`Halo Kak Nahya, saya ingin meminta sandi untuk Bab ${chap.id} (${chap.title}) buku GO WEB!`);
+            const waText = encodeURIComponent(`Halo Kak Nahya, saya ingin membeli Bab ${chap.id} (${chap.title}) buku GO WEB! seharga promo Rp 14.500 dan meminta sandi aksesnya.`);
             document.getElementById('whatsapp-request-link').href = `https://wa.me/6285520767908?text=${waText}`;
 
             document.getElementById('password-modal').classList.remove('hidden');
@@ -360,7 +363,6 @@
             document.getElementById('password-modal').classList.add('hidden');
         }
 
-        // Handle Password Submission
         function handlePasswordSubmit(event) {
             event.preventDefault();
             const chapId = parseInt(document.getElementById('modal-chapter-id').value);
@@ -378,29 +380,22 @@
             }
         }
 
-        // Simulated PDF Download
-        
+        function downloadPdf(chapId) {
+            const chap = chaptersData.find(c => c.id === chapId);
+            if (!chap) return;
 
-function downloadPdf(chapId) {
-    const chap = chaptersData.find(c => c.id === chapId);
-    if (!chap) return;
+            const pdfUrl = `pdf/${chap.pdfTitle}`;
+            const link = document.createElement('a');
+            link.href = pdfUrl;
+            link.download = chap.pdfTitle;
 
-    const pdfUrl = `pdf/${chap.pdfTitle}`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
 
-    const link = document.createElement('a');
-    link.href = pdfUrl;
-    link.download = chap.pdfTitle;
+            showToast(`Mengunduh materi Bab ${chapId}...`, 'success');
+        }
 
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-
-    showToast(`Mengunduh materi Bab ${chapId}...`, 'success');
-}
-
-
-
-        // Toast Notification Function
         function showToast(message, type = 'success') {
             const toast = document.getElementById('toast');
             const toastMessage = document.getElementById('toast-message');
@@ -419,7 +414,6 @@ function downloadPdf(chapId) {
             }, 3500);
         }
 
-        // Initialize on Load
         window.onload = function() {
             renderChapters();
         };
