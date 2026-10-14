@@ -379,24 +379,26 @@
         }
 
         // Simulated PDF Download
-        function downloadPdf(chapId) {
-            const chap = chaptersData.find(c => c.id === chapId);
-            if (!chap) return;
-            
-            // Create a mock download action or alert alternative
-            showToast(`Mengunduh ${chap.pdfTitle}... Silakan simpan untuk belajar offline.`, 'success');
-            
-            // In a real production deployment, this would link to the actual PDF file URL e.g. window.location.href = `pdf/bab${chapId}.pdf`;
-            setTimeout(() => {
-                const element = document.createElement('a');
-                const file = new Blob([`Materi Resmi Buku GO WEB!\nBab ${chap.id}: ${chap.title}\nPenulis: M. Nahya Fadlallah A.H.\nWhatsApp Penulis: 085520767908\n\nSelamat belajar coding!`], {type: 'text/plain'});
-                element.href = URL.createObjectURL(file);
-                element.download = chap.pdfTitle.replace('.pdf', '.txt');
-                document.body.appendChild(element);
-                element.click();
-                document.body.removeChild(element);
-            }, 1000);
-        }
+        
+
+function downloadPdf(chapId) {
+    const chap = chaptersData.find(c => c.id === chapId);
+    if (!chap) return;
+
+    const pdfUrl = `pdf/${chap.pdfTitle}`;
+
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = chap.pdfTitle;
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    showToast(`Mengunduh materi Bab ${chapId}...`, 'success');
+}
+
+
 
         // Toast Notification Function
         function showToast(message, type = 'success') {
