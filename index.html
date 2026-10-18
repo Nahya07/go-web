@@ -195,7 +195,7 @@ class="w-full h-64 object-contain rounded-xl shadow-md border border-white/20 bg
                 <input type="hidden" id="modal-chapter-id">
                 <div>
                     <label class="block text-xs font-semibold uppercase text-gray-600 mb-1">Sandi Statis Bab</label>
-                    <input type="password" id="password-input" required placeholder="Contoh: GOWEB1" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-500 focus:outline-none text-sm font-mono tracking-wider">
+                    <input type="password" id="password-input" required placeholder="Contoh: Admin123" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-500 focus:outline-none text-sm font-mono tracking-wider">
                 </div>
                 <div id="password-error" class="text-red-500 text-xs hidden font-medium bg-red-50 p-2.5 rounded-lg border border-red-100">
                     <i class="fa-solid fa-circle-exclamation mr-1"></i> Sandi salah! Hubungi penulis di 085520767908.
@@ -274,17 +274,17 @@ class="w-full h-64 object-contain rounded-xl shadow-md border border-white/20 bg
     <script>
         const chaptersData = [
             { id: 1, title: "Mengenal Dunia Web", sub: "Apa itu website, browser, server, domain, hosting, front-end, back-end, HTML/CSS/JS, tools, & project pertama.", password: "GOWEB1", pdfTitle: "Materi_Bab_1_Mengenal_Dunia_Web.pdf" },
-            { id: 2, title: "Mengenal HTML", sub: "Struktur HTML, tag, elemen, heading, paragraf, link, gambar, list, table, button, dan form.", password: "GOWEB2", pdfTitle: "Materi_Bab_2_Mengenal_HTML.pdf" },
-            { id: 3, title: "Membuat Struktur Website", sub: "Header, navigation, main, section, article, footer, dan menyusun struktur halaman yang rapi.", password: "GOWEB3", pdfTitle: "Materi_Bab_3_Struktur_Website.pdf" },
-            { id: 4, title: "Mengenal CSS", sub: "Apa itu CSS, selector, warna, font, background, border, margin, padding, width & height.", password: "GOWEB4", pdfTitle: "Materi_Bab_4_Mengenal_CSS.pdf" },
-            { id: 5, title: "Mengatur Layout Website", sub: "Box Model, Flexbox, Grid, position, membuat navbar, dan card website.", password: "GOWEB5", pdfTitle: "Materi_Bab_5_Layout_Website.pdf" },
-            { id: 6, title: "Membuat Website Responsive", sub: "Website di HP & laptop, media query, responsive layout, dan prinsip mobile-first.", password: "GOWEB6", pdfTitle: "Materi_Bab_6_Website_Responsive.pdf" },
-            { id: 7, title: "Mengenal JavaScript", sub: "Apa itu JavaScript, variable, string, number, boolean, operator, if/else, loop, dan function.", password: "GOWEB7", pdfTitle: "Materi_Bab_7_Mengenal_JavaScript.pdf" },
-            { id: 8, title: "JavaScript dan HTML", sub: "DOM, mengambil elemen HTML, mengubah teks & style, button, event, dan form handling.", password: "GOWEB8", pdfTitle: "Materi_Bab_8_JS_dan_HTML.pdf" },
-            { id: 9, title: "Membuat Project", sub: "Menggabungkan HTML + CSS + JavaScript: Website profil, landing page, kalkulator, & to-do list.", password: "GOWEB9", pdfTitle: "Materi_Bab_9_Membuat_Project.pdf" },
-            { id: 10, title: "Git dan GitHub", sub: "Apa itu Git, repository, commit, push, dan cara upload project ke internet.", password: "GOWEB10", pdfTitle: "Materi_Bab_10_Git_dan_GitHub.pdf" },
-            { id: 11, title: "Mengenal Backend & Database", sub: "Frontend vs backend, server, database, API, CRUD, dan sistem login sederhana.", password: "GOWEB11", pdfTitle: "Materi_Bab_11_Backend_Database.pdf" },
-            { id: 12, title: "PROJECT AKHIR", sub: "Murid membuat website lengkap dari awal sampai selesai secara mandiri.", password: "GOWEB12", pdfTitle: "Materi_Bab_12_Project_Akhir.pdf" }
+            { id: 2, title: "Mengenal HTML", sub: "Struktur HTML, tag, elemen, heading, paragraf, link, gambar, list, table, button, dan form.", password: "GOWEB22", pdfTitle: "Materi_Bab_2_Mengenal_HTML.pdf" },
+            { id: 3, title: "Membuat Struktur Website", sub: "Header, navigation, main, section, article, footer, dan menyusun struktur halaman yang rapi.", password: "GOWEB33", pdfTitle: "Materi_Bab_3_Struktur_Website.pdf" },
+            { id: 4, title: "Mengenal CSS", sub: "Apa itu CSS, selector, warna, font, background, border, margin, padding, width & height.", password: "GOWEB44", pdfTitle: "Materi_Bab_4_Mengenal_CSS.pdf" },
+            { id: 5, title: "Mengatur Layout Website", sub: "Box Model, Flexbox, Grid, position, membuat navbar, dan card website.", password: "GOWEB55", pdfTitle: "Materi_Bab_5_Layout_Website.pdf" },
+            { id: 6, title: "Membuat Website Responsive", sub: "Website di HP & laptop, media query, responsive layout, dan prinsip mobile-first.", password: "GOWEB66", pdfTitle: "Materi_Bab_6_Website_Responsive.pdf" },
+            { id: 7, title: "Mengenal JavaScript", sub: "Apa itu JavaScript, variable, string, number, boolean, operator, if/else, loop, dan function.", password: "GOWEB77", pdfTitle: "Materi_Bab_7_Mengenal_JavaScript.pdf" },
+            { id: 8, title: "JavaScript dan HTML", sub: "DOM, mengambil elemen HTML, mengubah teks & style, button, event, dan form handling.", password: "GOWEB88", pdfTitle: "Materi_Bab_8_JS_dan_HTML.pdf" },
+            { id: 9, title: "Membuat Project", sub: "Menggabungkan HTML + CSS + JavaScript: Website profil, landing page, kalkulator, & to-do list.", password: "GOWEB99", pdfTitle: "Materi_Bab_9_Membuat_Project.pdf" },
+            { id: 10, title: "Git dan GitHub", sub: "Apa itu Git, repository, commit, push, dan cara upload project ke internet.", password: "GOWEB100", pdfTitle: "Materi_Bab_10_Git_dan_GitHub.pdf" },
+            { id: 11, title: "Mengenal Backend & Database", sub: "Frontend vs backend, server, database, API, CRUD, dan sistem login sederhana.", password: "GOWEB111", pdfTitle: "Materi_Bab_11_Backend_Database.pdf" },
+            { id: 12, title: "PROJECT AKHIR", sub: "Murid membuat website lengkap dari awal sampai selesai secara mandiri.", password: "GOWEB122", pdfTitle: "Materi_Bab_12_Project_Akhir.pdf" }
         ];
 
         function getUnlockedChapters() {
